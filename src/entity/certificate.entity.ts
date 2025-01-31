@@ -7,7 +7,7 @@ export class Certificate {
     id: string;
 
     @ManyToOne(() => UserInfo, (user) => user.certificates)
-    user: UserInfo;
+    user: UserInfo | null;
 
     @Column()
     courseName: string;
